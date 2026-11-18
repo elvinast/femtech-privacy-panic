@@ -24,7 +24,6 @@ data/
   topsis_ranking.csv       AHP–TOPSIS ranking of the five policies
   survey_responses.csv     101 anonymous survey responses (EN + IT)
 figures/                   All thesis figures (PNG)
-code/                      Analysis notebooks and collection scripts (API keys removed)
 ```
 
 ## Data dictionaries
@@ -43,11 +42,21 @@ Sentiment: GPT-4o-mini (temperature 0), validated against a RoBERTa baseline (Co
 
 ## Rehydrating the tweets
 
-```bash
-pip install tweepy pandas
-export X_BEARER_TOKEN="your_token"
-python code/rehydrate_tweets.py data/tweets_dehydrated.csv tweets_rehydrated.csv
+The tweet text is not included; use the IDs in `tweets_dehydrated.csv` to re-download
+the originals through the X API (`pip install tweepy pandas`):
+
+```python
+import tweepy, pandas as pd
+client = tweepy.Client(bearer_token="YOUR_X_BEARER_TOKEN", wait_on_rate_limit=True)
+ids = pd.read_csv("data/tweets_dehydrated.csv")["tweet_id"].astype(str).tolist()
+rows = []
+for i in range(0, len(ids), 100):              # 100 IDs per request
+    for t in (client.get_tweets(ids[i:i+100], tweet_fields=["created_at"]).data or []):
+        rows.append({"tweet_id": t.id, "text": t.text})
+pd.DataFrame(rows).to_csv("tweets_rehydrated.csv", index=False)
 ```
+
+Tweets that have since been deleted or made private will be unavailable — this is by design.
 
 ## Citation
 
@@ -59,7 +68,6 @@ If you use this dataset, please cite:
 
 ## License
 
-- **Data** (`data/`, `figures/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-- **Code** (`code/`): MIT License (see `code/LICENSE`)
+**Data and figures** (`data/`, `figures/`): [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 Tweet content remains subject to the X/Twitter Terms of Service and belongs to its respective authors; only IDs are shared here.
