@@ -1,0 +1,20 @@
+# Secrets — never commit API keys or credentials
+.env
+*.key
+secrets.*
+**/credentials*.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large raw / intermediate artifacts (not part of the public release)
+*_raw.csv
+bertopic_model*
+batch_sentiment/

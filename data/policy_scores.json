@@ -1,0 +1,162 @@
+{
+  "Flo": {
+    "data_collection_clarity": {
+      "score": 5,
+      "reason": "Vague description of data types, lacks a complete list of sensitive health data.",
+      "evidence": "We collect personal data about you when you use the Services."
+    },
+    "third_party_disclosure": {
+      "score": 4,
+      "reason": "Vague about third-party sharing; lacks specific names.",
+      "evidence": "We may use information about your device and other details... to spread the word about Flo."
+    },
+    "user_control": {
+      "score": 9,
+      "reason": "Explicit rights to delete, access, and withdraw consent are provided.",
+      "evidence": "You can access, change, correct, delete and update your personal data by emailing us at support@flo.health."
+    },
+    "data_retention": {
+      "score": 7,
+      "reason": "States a specific retention period for inactive accounts.",
+      "evidence": "we will retain your personal data for three years ... After three years of inactivity, your personal data will be deleted."
+    },
+    "legal_basis": {
+      "score": 5,
+      "reason": "Legal basis mentioned but lacks specificity for each data type.",
+      "evidence": "We may use information about your device and other details... if you gave us consent to process your personal data."
+    },
+    "plain_language": {
+      "score": 7,
+      "reason": "Generally clear language with some technical terms.",
+      "evidence": "We promise to always be clear about how your personal data is used."
+    }
+  },
+  "Clue": {
+    "data_collection_clarity": {
+      "score": 8,
+      "reason": "Explicitly lists types of health data collected.",
+      "evidence": "Health data may include your cycle information (e.g. period length, pain, or spotting)..."
+    },
+    "third_party_disclosure": {
+      "score": 4,
+      "reason": "Vague about third-party sharing, lacks specific named parties.",
+      "evidence": "We rely on a number of other providers as summarized below"
+    },
+    "user_control": {
+      "score": 7,
+      "reason": "User rights mentioned but lacks detailed instructions.",
+      "evidence": "not found"
+    },
+    "data_retention": {
+      "score": 4,
+      "reason": "Mentions retention but gives no specific timeframe.",
+      "evidence": "We do not retain your data in an identifiable format for longer than necessary to deliver our services."
+    },
+    "legal_basis": {
+      "score": 6,
+      "reason": "Mentions processing health data but lacks specific legal basis details.",
+      "evidence": "We process health data... to provide our core service as a health tracking app."
+    },
+    "plain_language": {
+      "score": 8,
+      "reason": "Clear language with some technical terms, but generally accessible.",
+      "evidence": "We have done our best to make it as clear and comprehensible as possible."
+    }
+  },
+  "Premom": {
+    "data_collection_clarity": {
+      "score": 5,
+      "reason": "Lists some data but lacks specific health data details.",
+      "evidence": "not found"
+    },
+    "third_party_disclosure": {
+      "score": 4,
+      "reason": "Vague references to third parties without specific names.",
+      "evidence": "not found"
+    },
+    "user_control": {
+      "score": 8,
+      "reason": "Explicit rights mentioned but lacks detailed instructions.",
+      "evidence": "the choices you may have concerning your Personal Information"
+    },
+    "data_retention": {
+      "score": 8,
+      "reason": "States a specific 5-year retention period with justification.",
+      "evidence": "we will retain your Personal Information for a period of five (5) years ..."
+    },
+    "legal_basis": {
+      "score": 4,
+      "reason": "Legal basis for processing health data is vague and not explicitly detailed.",
+      "evidence": "not found"
+    },
+    "plain_language": {
+      "score": 7,
+      "reason": "Generally clear but contains some legal jargon.",
+      "evidence": "Please read this Privacy Policy carefully."
+    }
+  },
+  "NaturalCycles": {
+    "data_collection_clarity": {
+      "score": 5,
+      "reason": "Some data types mentioned, but not a complete list.",
+      "evidence": "Natural Cycles may process the following kinds of personal data about"
+    },
+    "third_party_disclosure": {
+      "score": 4,
+      "reason": "Vague on third-party sharing, lacks specific names.",
+      "evidence": "not found"
+    },
+    "user_control": {
+      "score": 8,
+      "reason": "Explicit rights mentioned but lacks detailed instructions.",
+      "evidence": "Your rights in relation to your Personal Data"
+    },
+    "data_retention": {
+      "score": 6,
+      "reason": "Dedicated retention section, per-category, but no specific timeframe.",
+      "evidence": "5. How long we keep your Personal Data \u2014 We retain your Personal Data for as long as necessary..."
+    },
+    "legal_basis": {
+      "score": 5,
+      "reason": "Legal basis mentioned but lacks specificity for each data type.",
+      "evidence": "We will only process your Personal Data in accordance with this Privacy Policy and applicable laws and regulations."
+    },
+    "plain_language": {
+      "score": 7,
+      "reason": "Generally clear language but some legal jargon present.",
+      "evidence": "Our Privacy Policy is designed to help you understand what information Natural Cycles collects and why we collect it."
+    }
+  },
+  "Stardust": {
+    "data_collection_clarity": {
+      "score": 8,
+      "reason": "Explicitly lists types of health data collected.",
+      "evidence": "we collect reproductive or sexual health information, including menstrual activity, fertility, pregnancy information, and sexual activity"
+    },
+    "third_party_disclosure": {
+      "score": 3,
+      "reason": "Vague on third-party sharing, lacks specific names.",
+      "evidence": "not found"
+    },
+    "user_control": {
+      "score": 6,
+      "reason": "User rights mentioned but lacks detailed instructions.",
+      "evidence": "not found"
+    },
+    "data_retention": {
+      "score": 3,
+      "reason": "Mentions retention and deletion but vaguely, no timeframe.",
+      "evidence": "DATA RETENTION AND DELETION \u2014 We store personal information for as long as necessary..."
+    },
+    "legal_basis": {
+      "score": 5,
+      "reason": "Legal basis for health data processing is vague and not explicitly stated.",
+      "evidence": "not found"
+    },
+    "plain_language": {
+      "score": 7,
+      "reason": "Clear language but lacks examples for better understanding.",
+      "evidence": "We collect information directly from you when you register an account on our app."
+    }
+  }
+}
