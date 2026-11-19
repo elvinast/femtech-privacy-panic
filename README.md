@@ -1,12 +1,11 @@
 # FemTech Privacy: The Say–Do Gap Dataset
 
-Data and code accompanying the thesis **"The Privacy Panic: Measuring the Say–Do Gap in FemTech Privacy"** (E. Shamoi, University of Padova, 2026), and the associated research article (in preparation).
+Data and code accompanying the thesis **"The Privacy Panic: Measuring the Say–Do Gap in FemTech Privacy"** (E. Shamoi, University of Padova, 2026).
 
 The project measures the gap between what period- and fertility-tracking apps **promise** in their privacy policies (the *SAY* side) and how much users **actually trust** them, inferred from the sentiment of their reviews and posts (the *DO* side), across five apps (Flo, Clue, Natural Cycles, Premom, Stardust) from 2016 to 2026.
 
-## ⚠️ Important: how the data is shared
+## Important: how the data is shared
 
-This repository follows platform terms of service and data-protection good practice:
 
 - **App-store reviews** (Google Play, Apple App Store) are provided **in full** (text + rating + labels). They contain **no usernames** or author identifiers.
 - **Tweets** are provided with their text and the labels derived in this study, **without any author information** — no names, handles, follower counts, or profile links. Each row keeps its `tweet_id` so the original can be located if needed.
@@ -40,13 +39,6 @@ figures/                   All thesis figures (PNG)
 
 Sentiment: GPT-4o-mini (temperature 0), validated against a RoBERTa baseline (Cohen's κ = 0.73). Topics: BERTopic (embeddings → UMAP → HDBSCAN → c-TF-IDF), 67 topics on the privacy subset. Policy scoring: GPT-4o-mini on six dimensions. Policy ranking: AHP–TOPSIS. Say–Do Gap: z(SAY) − z(DO).
 
-## Citation
-
-If you use this dataset, please cite:
-
-> Shamoi, E. (2026). *The Privacy Panic: Measuring the Say–Do Gap in FemTech Privacy.* University of Padova.
-
-(A citation for the journal article will be added once published.)
 
 ## License
 
